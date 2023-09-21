@@ -39,7 +39,7 @@ const Editstudent = () => {
     useEffect(() => {
         loadUsers();
         
-    }, [])
+    })
     const handleSubmit = async (e) => {
         e.preventDefault();
         await updateUser(params.get('id'), formData);
